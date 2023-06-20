@@ -1,11 +1,11 @@
 const express = require("express");
 const router = express.Router();
 const {
-  getAllLoans,
+   getAllLoans,
   borrowBooks,
   returnBooks,
   membersWithBooks,
-} = require("./controllers/loansControllers");
+} = require("../controllers/LoansControllers");
 
 router.get("/loans", getAllLoans);
 router.post("/borrow", borrowBooks);
